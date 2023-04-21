@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Wiki Parse</title>
+</head>
+<body>
+
+
+	{% include 'style.html' %}
+
+
+	{% if parse %}
+
+		<p id="title">
+			{{title}}
+		</p>
+
+		<div id="summary-block">
+			<p id="summary">{{summary}}</p>
+		</div>
+
+		<p id="time">{{time}}</p>
+
+	{% else %}
+
+		<p id="error">{{error}}</p>
+
+	{% endif %}
+
+</body>
+</html>
